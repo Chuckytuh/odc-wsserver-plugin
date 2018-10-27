@@ -1,0 +1,17 @@
+{
+  "name": "com.outsystems.odc.wsserver.plugin",
+  "version": "1.0.0",
+  "description": "Simple WebSocket Server plugin to showcase WebSocket communication for OutSystems Developer Conference 2018.",
+  "cordova": {
+    "id": "com.outsystems.odc.wsserver.plugin",
+    "platforms": ["android"]
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "João Gonçalves <joao.goncalves@outsystems.com>",
+  "contributors": [
+    "Bruno Grácio <bruno.gracio@outsystems.com>"
+  ],
+  "license": "ISC"
+}

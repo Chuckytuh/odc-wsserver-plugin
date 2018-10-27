@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="com.outsystems.odc.wsserver.plugin" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>OdcWsServer</name>
+    <js-module name="OdcWsServer" src="www/OdcWsServer.js">
+        <clobbers target="cordova.plugins.OdcWsServer" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="OdcWsServer">
+                <param name="android-package" value="com.outsystems.odc.wsserver.plugin.OdcWsServer" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+        </config-file>
+        <source-file src="src/android/OdcWsServer.java" target-dir="src/com/outsystems/odc/wsserver/plugin" />
+        <framework src="src/android/dependencies.gradle" custom="true" type="gradleReference" />
+    </platform>
+</plugin>
